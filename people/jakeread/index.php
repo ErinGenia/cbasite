@@ -6,5 +6,4 @@
 <body>
 ready set -
 
-<!--<?php include '/footer.php';?>-->
 </body>
