@@ -1,0 +1,63 @@
+<!-- 01 -->
+
+<h2>CAD for Final Project</h2>
+
+<h3>Discus Launch Glider</h3>
+
+<video width="700" height="393" controls autoplay loop>
+<source src="http://i.imgur.com/DkGhTJp.mp4" type="video/mp4">
+</video><br><br>
+
+<p>
+	About halfway through <em>'Seven Eves'</em>, Neal Stephenson arrives at the claim that <strong><em>"there's enough energy in the atmosphere alone to propel a craft to the edge of space".</em></strong> I don't know if this is true, but I want to believe it.<br><br>
+	In any case, gliding is super neat and kind of beautiful. There's a community of folk who fly what are called 'Discus Launch Gliders' or DLG's. These are small (~1-2m wingspan) remote control aircraft that are hand-launched about ~20m, wherein their pilots search for thermals and take them higher.<br><br>
+	Another interesting variant of remote controlled gliders are Slope Soarers or 'warmliners', which have been clocked at ~450km/h without any on-board power. ! I want one. I will try to build one.<br>
+</p>
+
+<h4>Spec!</h4>
+<p>
+	<strong><em>The Numbers</em></strong><br>
+	~ 1800mm span (my height, roughly)<br>
+	~ 1.3kg/m^2 wing loading - aircraft weight / useable wing area (this is a really good metric for how 'floaty' an aircraft will be - most DLG's are around this number so this is what I will aim for)<br>
+	~ 1km line-of-sight radio range.<br>
+	<br>
+	<strong><em>Other Desires</em></strong><br>
+	~ <strong>easy-to-balance CG</strong> (center of gravity positioning is critical and impossible to get right on the first time)<br>
+	~ <strong>telemetry</strong> ('real' gliders use a click (more clicks = more vertical speed) to convey rate-of-climb to the pilot. I want to have this data fed back to me from the remote control glider... thermals are hard to see when you're not in them)<br>
+	~ <strong>collapsible</strong> (if it fit into a blueprint-tube I would be amped. if I don't ever take it to the field, what's the point?)<br>
+	~ <strong>simple!</strong> I have issues with complexity. I want to make this only as complex as it needs to be.<br>
+	<br>
+	<strong><em>Other System Notes</em></strong><br>
+	~ <strong>LoRa Radio</strong> a-la <a href="https://www.adafruit.com/product/3078">Adafruit</a> - Grace at the CBA has been using these, and they seem pretty sweet (+1km range). I will try to use two of these modules to do RC Control.<br>
+	~ <strong>event based c++</strong> -> I would love to expand this project in later years to do really crazy things like autonomous gliding (maybe not that far fetched) and in general I want to write better embedded c++. I would like to use this project as an opportunity to write the bones of a lightweight real-time event system, or implement an existing RTOS (see <a href="http://www.chibios.org/dokuwiki/doku.php">ChibiOS</a>).
+	~ <strong>re-inventing the servo?</strong> -> RC Servos work really great, and are super cheap. But for some reason I am tempted to try rolling my own with some kind of encoder and a <a href="https://www.pololu.com/category/60/micro-metal-gearmotors">Pololu DC Gearmotor</a>. I don't know why I want to do this, but I think it would be cool. 
+</p>
+
+<h4>Design!</h4>
+<p>
+	Aircraft need to be balanced - meaning the center of aerodynamic forces and the center of gravity need to be roughly in the same spot. This is a broad generalization, but a useful one.<br><br>
+	In addition, by making sure that the center of gravity is *just slightly* forwards of the center of aerodynamic forces, we can make the aircraft stable.<br>
+	<a href="https://history.nasa.gov/SP-367/chapt9.htm"><img src="https://history.nasa.gov/SP-367/fig131.jpg"></a><br>
+	The NASA Doc that this image links to is a great bootstrap on Aircraft Dynamics<br><br>
+	I wrote a design tool in Rhino / Grasshopper that estimates the Center of Lift, Center of Gravity and Wing Loading. This, along with consideration of already-successful designs, should get me close to the working-aircraft ballpark. From there it'll be a CG-tuning challenge, and a measure of how light / stiff I can make everything.<br><br>
+	<img src="01/cgac.png" width="700px"><br>
+	Grasshopper Balance Tool<br><br>
+	<img src="01/basics.png" width="700px"><br>
+	I used the little Grasshopper tool to anneal the design towards something I'm happy with... It's straightforward, looks like a DLG, and it should balance. The challenge in this project is really going to be in the details, and there's a lot of opportunity in the term to really get the small things right. Details have been my undoing in the past, and I am really keen to mature as a designer who makes things that work.<br><br>
+	<img src="01/beauty.png" width="700px"><br>
+	There it is! So far - I'm happy with this rough cut / layout. There's lots of detail to add, but I think this is a think-about-it-slowly problem. I would be really stoked to do this well.
+</p>
+
+<h4>Detail(s) to Design</h4>
+<p>
+	<img src="01/rearsurfaces.png" width="700px"><br>
+	While the rear section of the fuselage is a carbon tube (hollow), I'll have to route control rods through it, and set up linkages and hinges for these two rear control surfaces. Doing this well means I will have responsive controls and properly loaded servos.<br><br>
+	<img src="01/fuselage.png" width="700px"><br>
+	I'm not entirely sure how to do this well yet. I know I want the batteries (two cells at the front) and radio (a package deal: electronics design week) to be mobile - i.e. I will move these around in the fueslage in order to adjust the center of gravity. It's important to keep the fuselage small as it's all bonus no-good not-useful drag. Perhaps I can two-sided mill a foam body, cover it with a low-temp shrink, and vacuum mold 'canopies'.<br><br>
+	<img src="01/back.png" width="700px"><br>
+	The 'back' of the aircraft - where the wings will be mounted. Wings are going to come on / off quite regularly (in fact I should coordinate fuselage access with wing-removal). Also important is that the wings snap on the same spot every time, so I should try some kind of kinematic layout.<br><br>
+	<img src="01/tip.png" width="700px"><br>
+	At the tip of the wing are these little hooks, which you use to 'discus' the glider into the air. Insignificant most of the time, the largest loads the aircraft will see will go through this point. This will be hard work to do well during the Composites week.
+</p>
+
+<!-- 01 fin -->

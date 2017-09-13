@@ -1,0 +1,9 @@
+sitenotes
+
+TODO:
+	alt-text hover? for lists
+	<em> and <strong> ?
+	tighten up 'projects' so word wraps, set width
+	font lighter?
+	neat background?
+	image inclusion w/ relative paths?
