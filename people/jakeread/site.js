@@ -46,11 +46,10 @@ function startPage(){
 	document.body.appendChild(projDiv)
 
 	xSidebarRequest.send();
-	//xFooterRequest.send();
-	getProject('00');
+	getProject('00/00.html');
 }
 
-function getProject(projectNumber){
-	xProjectRequest.open('GET', relpath + projectNumber + '/' + projectNumber + '.html', true)
+function getProject(path){
+	xProjectRequest.open('GET', relpath + path, true)
 	xProjectRequest.send();
 }
