@@ -1,0 +1,59 @@
+/*Last Updated: March 5th, 2017*/
+body{
+  color: #333232;
+}
+
+h1{
+  font-family: "avenir-black";
+  font-size: 72px;
+}
+h2{
+  font-family: "avenir-light";
+  font-size: 48px;
+}
+#project h2{
+  font-family: "avenir-black";
+  font-size: 30px;
+}
+h3{
+  font-family: "avenir";
+  font-size: 28px;
+}
+h4{
+  font-family: "avenir-light";
+  font-size: 28px;
+}
+h5{
+  font-family: "avenir";
+  font-size: 18px;
+}
+h6{
+  font-family: "avenir";
+  font-size: 16px;
+}
+p{
+  font-family: "avenir-light";
+  font-size: 16px;
+}
+a{
+    color: #f29258;
+}
+a:visited  {
+    color: #f29258;
+}
+a:hover {
+    text-decoration: none;
+    color: rgba(252, 229, 155, 1);
+}
+
+#project a:hover{
+    color: white;
+}
+
+.fa-4x {
+    letter-spacing: 12px;
+}
+
+#bio{
+  text-align: right;
+}
