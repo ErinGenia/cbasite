@@ -8,6 +8,12 @@ body {
   width: 902px;
 }
 
+
+#textwrapper {
+  width: 650px;
+  padding: 20px 20px 20px;
+}
+
 #title {
   font: bold 46px/40px "Helvetica", "Arial", sans-serif;
   background: #BBBBBB;
@@ -48,21 +54,23 @@ canvas {
   color: #222;
 }
 
-.imgBlock {
+#imgBlock {
     width: 100%;
     height: 235px;
     display: inline-block;
     position: relative;
+    padding: 30px 0 30px 0;
 
 }
 
 img {
     display: inline-block;
     height: 230px;
+    margin: 0 20px 0 0;
 }
 
-.textbox {
-width: 400px;
+#textbox {
+width: 600px;
 height: 500px;
 float: left;
 }
