@@ -50,6 +50,28 @@ a:hover {
     color: white;
 }
 
+.page-header{
+    text-align: center;
+}
+
+#project-header{
+    text-align: center;
+    margin-top: 0px;
+}
+
+#week h2{
+    font-family: "avenir-black";
+    font-size: 48px;
+}
+
+.section-header{
+    text-align: left;
+}
+
+.section-content{
+    text-align: left;
+}
+
 .fa-4x {
     letter-spacing: 12px;
 }
