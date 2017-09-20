@@ -1,8 +1,204 @@
 <html>
-<head></head>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0">
+    <script src="assets/js/jquery-1.9.1.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.frames.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+    <title>Tomas Vega</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <meta name="description" content="Hacker, Tinkerer, Developer">
+</head>
+    
 <body>
-    <div id="header">
-        Tom&aacute;s has fun making (almost) anything! 
+    <div id="container">
+        <div id="panel-projects" class="panel">
+            <div class="panel-title">
+                Tom&aacute;s.makes;
+            </div>
+            <div id="project-container">
+                <div id="project-1" class="display-none project-content">
+                    <div class="project-back" id="project-back-1">
+                    &#8668;
+                    </div>
+<svg class="link-svg" id="project-link-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M40.4,63.7H25.9c-6.9,0-12.6-5.6-12.6-12.6v-4c0-6.9,5.6-12.6,12.6-12.6h16.5c6.9,0,12.6,5.6,12.6,12.6v6c0,1.7,1.3,3,3,3   s3-1.3,3-3v-6c0-10.2-8.3-18.6-18.6-18.6H25.9c-10.2,0-18.6,8.3-18.6,18.6v4c0,10.2,8.3,18.6,18.6,18.6h14.5c1.7,0,3-1.3,3-3   S42,63.7,40.4,63.7z"/><path d="M74.4,28.5H61.9c-1.7,0-3,1.3-3,3s1.3,3,3,3h12.5c6.9,0,12.6,5.6,12.6,12.6v4c0,6.9-5.6,12.6-12.6,12.6H59.9   c-6.9,0-12.6-5.6-12.6-12.6v-6c0-1.7-1.3-3-3-3s-3,1.3-3,3v6c0,10.2,8.3,18.6,18.6,18.6h14.5c10.2,0,18.6-8.3,18.6-18.6v-4   C93,36.9,84.7,28.5,74.4,28.5z"/></g></svg>
+                    <div class="project-title">
+                        Computer-Aided Design
+                    </div>
+                    <div class="project-date">
+                        Week 1
+                    </div>
+                    <div class="project-tech">
+                        {
+                        <div class="project-tech-item">Fusion 360 Ultimaker 2+</div>
+                        }
+                    </div>
+                    <div class="project-description">
+<h2>Idea</h2>
+I don't want to commit to one project idea yet, but I do know that I want to make some sort of haptic feedback device. Given the time frame for this assignment, I wanted to make something simple to fabricate but within my area of interest, enabling me to begin exploring different tactile experiences. Therefore, I decided to make a device that electromagnetically "tickles" or "touches" (not sure what verb is best to describe the sensation) the user on the helix (top part) of the ear. The device will have an electromagnet that will push/pull a permanent magnet on the ear. This magnet could be pierced, but for now I am using two thin ones that attract to each other and clamp on the helix. I will attach the electromagnet to the frame of my working glasses as this provides a stable structure for easy mounting.
+<br>
+<b>Applications</b>
+<ul>
+  <li>It is common for people to walk and text. This may lead to people running onto each other. Using this sutil alert system I could put a gyroscope on the     frame to detect head angle, and a distance sensor on a hat to determine when the user is going to collide with an obstacle when it is not looking directly forward.</li>
+<li>
+    I often listen to music while working. When people are outside my office and they knock on the door I am unable to listen to them. I propose a system that detects knocks and alerts me using Electickle.
+</li>
+ <li>
+     It could also be appropriate for navigation if mounted on both sides of the head.                        
+</li>
+<li>
+    It also reminds me of how my grandmother pulled my ears, so I thought it could be used as a cue for attention and emotional control. Children with attentional disorder could be reminded by the teacher in a subtle manner without other classmates noticing, eliminating possible social stigmas.
+</li>
+</ul>                
+                        
+                <h2>Process</h2>
+                        
+                <h3>Coil Spool Glasses Attachment</h3>
+                    First I measured the frame of my working glasses. This is my second week at the lab so I don't have many tools yet, and I don't really know where things are. The only digital calipers I could find had no batteries, so I had to rely on the ruler it has on the metal... I felt like a primate! For it to fit tightly without damaging the frame I did a few test prints using the Ultimaker 2+. It was very well calibrated, I had no trouble using the settings I alraedy had on Cura for that specific machine.
+                        
+                <div class="images">
+                    <div id="electickle-design-1" class="image"></div>
+                    <div id="electickle-design-2" class="image"></div>
+                    <div id="electickle-design-3" class="image"></div>
+                </div>
+                        
+                <h4>Testing</h4>
+                I used a breadboarded h-bridge circuit I had built in Berkeley to test my haptic devices. It worked! However, the electromagnet barely moved. Now that I see the photo of the breadboard, I couldn've used the buck-converter to bump up the voltage from 3.3V to 5V. I can't make the spool taller or it could bump into my head, and I can't make it wider because it would look to bukly. I would love to learn how to make flexible circuit boards so I can make very thin coils. I could assemble a sandwich of coil-insulator-coil * n to make a powerful electromagnet without the need of a permanent magnet as its core.
+                <div class="images">
+                    <div id="electickle-design-4" class="image"></div>
+                    <video width="550" controls>
+                      <source src="assets/img/week1/electickle-demo.mp4" type="video/mp4">
+                    </video>                        
+                </div>
+                <h3>Modeling my Glasses</h3>
+                    Because of the simplicity of my copper spool glasses attachment design, I had a lot of time left. Therefore, I wanted to use this time to learn how to assemble different components and render them beautifully. I couldn't use an existing glasses .stl file from the Internet as it wouldn't fit my design, so I modeled my own by following a <a target="_blank" href="https://youtu.be/uAAR1c-Tzl8">tutorial</a>. This took my much longer than expected, but I did learn a lot, from taking photos of my glasses at 3 different angles, using sculpture mode, using physical materials for different bodies, to having silky-smooth realistic renderings of my design.
+                        
+                <h3>Assembling the Components, Exploded View, and Animation</h3>
+                Because when using the sculpture method one has to eye-ball everything, my glasses frame was not exactly the correct thickness. I had to modify my design for the coil spool attachment to fit on the frame. I then learned how to explode the different components, and finally how to record animations at different views as components explode.
+                <div class="images">
+                    <div id="electickle-design-5" class="image"></div>
+                </div>
+                </div>
+                </div>
+                <div id="project-2" class="display-none project-content">
+                    <div class="project-back" id="project-back-2">
+                    &#8668;
+                    </div>
+                    <div class="project-title">
+                        Computer-Controlled Cutting
+                    </div>
+<svg class="link-svg" id="project-link-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M40.4,63.7H25.9c-6.9,0-12.6-5.6-12.6-12.6v-4c0-6.9,5.6-12.6,12.6-12.6h16.5c6.9,0,12.6,5.6,12.6,12.6v6c0,1.7,1.3,3,3,3   s3-1.3,3-3v-6c0-10.2-8.3-18.6-18.6-18.6H25.9c-10.2,0-18.6,8.3-18.6,18.6v4c0,10.2,8.3,18.6,18.6,18.6h14.5c1.7,0,3-1.3,3-3   S42,63.7,40.4,63.7z"/><path d="M74.4,28.5H61.9c-1.7,0-3,1.3-3,3s1.3,3,3,3h12.5c6.9,0,12.6,5.6,12.6,12.6v4c0,6.9-5.6,12.6-12.6,12.6H59.9   c-6.9,0-12.6-5.6-12.6-12.6v-6c0-1.7-1.3-3-3-3s-3,1.3-3,3v6c0,10.2,8.3,18.6,18.6,18.6h14.5c10.2,0,18.6-8.3,18.6-18.6v-4   C93,36.9,84.7,28.5,74.4,28.5z"/></g></svg>
+                    <div class="project-date">
+                        Week 2
+                    </div>
+                    <div class="project-tech">
+                        {
+                        <div class="project-tech-item">Fusion 360</div>
+                        <div class="project-tech-item">Laser Cutter</div>
+                        <div class="project-tech-item">Vinyl Cutter</div>
+                        }
+                    </div>
+                    <div class="project-description">
+                    A group of people from my section met and did some test cuts. We first did a parametric design of the square, but thankfully the parameters we chose worked on the first time. The cardboard thickness was 4.3mm, and we chose 4.2mm. However, I decided to go for 4.1mm as it would add even more rigidity to the structure. Although the recommended cutting frequency was 200 Hertz, I wasn't able to get a clean cut - some edges wouldn't cut all the way through. I found 420 Hertz to be better at this.
+                        
+                    <h4>Lessons learnt</h4>
+                    When exporing DXF files from Fusion 360, all the construction lines are exported as normal lines, resulting in double lines which lead to the laser cutting cutting multiple times over an edge. Therefore, I had to import the file to Rhino, where I cleaned the file before sending it to the laser cutter.
+                    <div class="images">
+                        <div id="carton-design-1" class="image"></div>
+                        <div id="carton-design-2" class="image"></div>
+                    </div>  
+                        
+For this week, I wanted to combine both assignments: laser-cutting and vinyl-cutting. Inspired by little bits,
+I decided to do a very simple version using cardboard and copper tape. This would entail four different modules: power, input, output, and connectors.
+                        <h2>Power</h2>
+                        
+                        <h3>First Attempt</h3>
+                    <div class="images">
+                        <div id="carton-power-1" class="image"></div>
+                        <div id="carton-power-2" class="image"></div>
+                    </div>          
+                        I started with the power module. My idea was to have one piece that would hold the coin battery. I wanted to use magnets on these flaps to hold the battery. I soon discovered cardboard is not very good folding, at least the shape I chose.
+                        
+                    <h3>Second Attempt</h3>
+                    I decided to go for a sandwich design which would hold the battery between the two breads. The power plane would go above and ground below.
+                        
+                    <div class="images">
+                        <div id="carton-power-3" class="image"></div>
+                        <div id="carton-power-4" class="image"></div>
+                    </div> 
+                    <h2>Ouput</h2>
+                    <h3>First Attempt</h3>
+                    <div class="images">
+                        <div id="carton-output-1" class="image">
+                            <div class="image-description">
+                            Exploded view (from bottom to top): cardboard unit, power trace, insulation layer, ground trace
+                            </div>
+                        </div>
+                        <div id="carton-output-2" class="image">
+                            <div class="image-description">
+                            Power trace placed on cardboard unit. More info on how to sucessfully cut and transfer copper tape traces below.
+                            </div>
+                        </div>
+                        <div id="carton-output-3" class="image">
+                            <div class="image-description">
+                            Power trace placed on cardboard unit. More info on how to sucessfully cut and transfer copper tape traces below.
+                            </div>
+                        </div>
+                        <div id="carton-output-4" class="image">
+                            <div class="image-description">
+                            Power trace placed on cardboard unit. More info on how to sucessfully cut and transfer copper tape traces below.
+                            </div>
+                        
+                        </div>
+                        <div id="carton-output-5" class="image">
+                            <div class="image-description">
+                            Power trace placed on cardboard unit. More info on how to sucessfully cut and transfer copper tape traces below.
+                            </div>
+                        
+                        </div>
+                        <div id="carton-output-6" class="image">
+                            <div class="image-description">
+                            Power trace placed on cardboard unit. More info on how to sucessfully cut and transfer copper tape traces below.
+                            </div>
+                        </div>
+                    </div> 
+                    <h3>Second Attempt</h3>
+                        
+                    <h2>Connector</h2>
+                    <h3>First Attempt</h3>
+                        DIDN'T WORK! NAAAAAH HAVE TO DO IT AGAIN!!!!! NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAA
+                    <h3>Second Attempt</h3>
+                        
+                    <h2>Input</h2>
+                    <h3>First Attempt</h3>
+                    
+                    <h2>Assembly</h2>
+                        
+                <div class="images">
+                    <div id="electickle-assembly-final" class="image"></div>
+                    <div id="electickle-final" class="image"></div>
+                </div>
+                    
+                </div>
+            </div>
+            </div>
+            <div id="projects-grid">
+                <div class="project-cell" id="project-cell-1">
+                    <div class="project-cell-cover">
+                        Computer-Aided Design
+                    </div>
+                </div>
+                <div class="project-cell" id="project-cell-2">
+                    <div class="project-cell-cover">
+                        Computer-Controlled Cutting
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
 </body>
+    
+    
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+    <title>week 2</title>
+  </head>
+  <body>
+
+
+      <div id="title">
+        <a>computer controlled cutting</a>
+        <br/>
+      </div>
+      
+        <a id="inPage" href="#vinyl">2.1 vinyl cutter</a> <br/>
+        <a id ="inPage" href="#laser">2.2 laser cutter</a> 
+      
+    <div id="textwrapper">    
+    
+    <div id="textbox">
+    <a  name="vinyl"><h1>laptop sticker</h1></a>
+    I've always been fond of the russian painter Kasmir Malevich. I thought that re-creating his most famous work <em>'Black Square'</em> (it's a black square) might be a bit of a cop out, and I was interested to try and work with multiple colours. 
+    
+    <div id="imgBlock">
+    <img src = "assets/img/2/malevich-aeroplane-flying.jpg">    
+    <img src = "assets/img/2/ai-trace-malevich.png">
+    </div><br/><br/>
+    
+    Here I used adobe illustrator to trace the painting <em>'Aeroplane Flying'</em>, shown above in the original and traced form, with different colours separated into layers. In order to cut the layers separately, I used CorelDraw, which allows different layers to be sent to the printer at different times, instead of using 4 separate files.
+
+    
+
+    <div id="imgBlock">
+    <img src = "assets/img/2/red-layer.jpg">    
+    <img src = "assets/img/2/yellow-layer.jpg">
+    <img src = "assets/img/2/black-layer.jpg">    
+    <img src = "assets/img/2/blue-layer.jpg">
+    </div>  
+    
+        
+    <br/><br/> The two squares in the corner of the piece are registration marks: these allow the different colours to be matched up, and ensure the final sticker is well aligned. The separated layers are pictured above. Assembling the pieces, I used a strip of masking tape to align the registration marks, and make sure they could be removed after they were stuck down.
+    
+    <div id="imgBlock">
+    <img src = "assets/img/2/sticker.gif">    
+    <img src = "assets/img/2/laptop-sticker.jpg">
+    </div>    <br/><br/>
+    
+    
+    <a name="laser"><h1>press kit city</h1></a>
+    
+    For the laser cutter task, I chose to look at making a build-your-own-city kit. The idea of the kit is to be modular and adaptible, with each feature fitting onto a standardised, tesselating base tile. As any feature constructed would need to fit into the tile, there are a number of possible slots to incorporate different kinds of building (flats, houses, parks etc). 
+    
+    <div id="imgBlock">
+    <img id="bigimg" src = "assets/img/2/sketches.jpg">    
+    </div>    <br/><br/>
+    
+    The initial base tile I made was all well and good -- until I came to fit the pieces together, and realised I hadn't actually checked that they tesselated in CAD (they didn't). This was annoying, but by this point I'd progressed a bit further with the design of the other parts (and had a better understanding of parametrisation), so the final base tile was much improved. (below: the base before and after improvement)<br/>
+    
+    
+    <div id="imgBlock">
+    <img id="img" src = "assets/img/2/base_initial_drawing.png">
+    <img id="img" src = "assets/img/2/base_final_drawing.png">
+    </div>    <br/><br/>
+    
+    
+    I chose to do the designs in Fusion 360 -- I'd found this the most usble of the CAD packages I'd tried in part 1, as well as one of the more extensive and useful. Here I was completely saved by having parametrised the card width; I'd misremembered the measurement as 2.7mm (way lower than the 4.1mm I eventually used for the slot)  -- but correcting this was pretty painless compared to how long it would've taken with just a manual measurement. For this task, I settled on 3 different buildings --  2 high-rise, 1 low-rise -- to test out different constructions.
+    
+    <div id="imgBlock">
+    <img id="img" src = "assets/img/2/building_1_drawing.png"> 
+    <img id="img" src = "assets/img/2/building_1.jpg">
+    </div>    <br/><br/>
+    
+    The first and simplest building (above) was a 4-sided block of flats: this was reasonably easy to fit to the base, and came out well. The initial design for the roof did not hold the top together sufficiently, and was greatly improved by the addition of small 'hooks' around the edges of the slots in the redesign. (below left: before, below right: after).
+    
+    
+    <div id="imgBlock">
+    <img id="img" src = "assets/img/2/good-bad-roof.jpg"> 
+    </div>    <br/><br/>
+    
+    The second building (below) proved more complicated, partly due to a misunderstanding of constraints, and a lack of parametrisation (changing one thing changed lots of things, very slightly, and nothing fit). Problems with this building were eventually ironed out, however, and the final form works well. The base shape (intersecting cross) is also extremely sturdy, and would form a good base for taller construction. 
+
+    <div id="imgBlock">
+    <img id="img" src = "assets/img/2/building_2.jpg">
+        <img id="img" src = "assets/img/2/building_2_2.jpg">
+    </div>    <br/><br/>
+
+    For the third building, I chose to make a smaller piece in the shape of a house, to fit on one quadrant of the base tile. The card was a little thick compared to the size of this one, a thickness that felt unwieldy, especially with the roof (where it caused a lot of problems). It would be nice to revisit the 'small' design with a simpler shape.
+    
+        <div id="imgBlock">
+    <img id="img" src = "assets/img/2/building_3_drawing.png">
+        <img id="img" src = "assets/img/2/building_3.jpg">
+    </div>    <br/><br/>
+    
+    The final cityscape was a little modest (I might print some more now the designs have been tested!) but as a proof of concept is a good starting point for the final project. A lot of mistakes in the manufacture (some learning, some preventable) meant this took a very long time; I think on a second run this kind of project will be a lot quicker. As my first proper encounter with parametric CAD it was a steep learning curve. 
+    
+    
+    <div id="imgBlock">
+    <img id="bigimg" src = "assets/img/2/city-scape-1.jpg">
+    </div>    <br/><br/>
+    
+    <div id="footer">
+          <a href="index.html">back</a>
+      </div>
+
+    
+    </div>
+    
+
+ </div>
+      
+      
+      
+  </body>
+</html>
