@@ -1,0 +1,25 @@
+/*Last Updated: March 5th, 2017*/
+.modal-body{
+    text-align: left;
+}
+
+.thumbnail {
+    position:relative;
+    background-color: #333232;
+}
+
+.thumbnail:hover .img-responsive{
+    opacity: .25;
+}
+
+.thumbnail:hover #overlay{
+    display: block;
+}
+#overlay {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 28%;
+    width: 100%;
+    display: none;
+}
