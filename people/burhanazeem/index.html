@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Emily Salvador</title>
+    <link rel='shortcut icon' href='static/e.ico' type='image/x-icon'/ >
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/image.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89947864-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+<style type="text/css"></style></head>
+
+<body>
+  <!-- Navbar Fixed Top -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a class="page-scroll" id="about-nav" href="http://emilysalvador.com/#about">About</a>
+            </li>
+            <li>
+                <a class="page-scroll" id="project-nav" href="http://emilysalvador.com/#project">Projects</a>
+            </li>
+            <li>
+                <a class="page-scroll" id="contact-nav" href="http://emilysalvador.com/#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <script>
+  $( document ).ready(function() {
+    $("#about-nav").hover(function(){
+      $(".navbar").css('background-color','rgba(252, 158, 130, 1)');
+      $("#about-nav").css('color','rgba(242, 90, 74, 1)');
+      $("#project-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#contact-nav").css('color','rgba(255, 255, 255, .7)');
+    });
+    $("#project-nav").hover(function(){
+      $(".navbar").css('background-color','rgba(67, 188, 233, 1)');
+      $("#about-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#project-nav").css('color','rgba(38, 107, 165, 1)');
+      $("#contact-nav").css('color','rgba(255,255,255,.7)');
+    });
+    $("#contact-nav").hover(function(){
+      $(".navbar").css('background-color','rgba(252, 229, 155, 1)');
+      $("#about-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#project-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#contact-nav").css('color','rgba(242, 146, 88, 1)');
+    });
+    $(".colorbar").hover(function(){
+      $(".navbar").css('background-color', 'rgba(128, 128, 128, 1)');
+      $("#about-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#project-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#contact-nav").css('color','rgba(255, 255, 255, .7)');
+    });
+    $("#htmaa").hover(function(){
+      $(".navbar").css('background-color', 'rgba(128, 128, 128, 1)');
+      $("#about-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#project-nav").css('color','rgba(255, 255, 255, .7)');
+      $("#contact-nav").css('color','rgba(255, 255, 255, .7)');
+    });
+  });
+  </script>
+  <div class="spacer"></div>
+  <div class="colorbar"></div>
+
+  <!-- Heading Section -->
+  <section id="htmaa" class="htmaa-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+            <h1 class="page-header">How To Make (Almost) Anything</h1>
+          </div>
+          <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+            <h1 class="page-header">How To Make (Almost) Anything</h1>
+          </div>
+      </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project" class="project-section">
+    <div class="container">
+        <div class="row">
+            <div id="week0" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week0/index.html">
+                  <img class="img-responsive" src="week0/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 0<h2>
+                    <h5>Computer Aided Design</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week1" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week1/index.html">
+                  <img class="img-responsive" src="week1/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 1<h2>
+                    <h5>Computer Controlled Cutting</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week2" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week2/index.html">
+                  <img class="img-responsive" src="week2/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 2<h2>
+                    <h5>Electronics Production</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week3" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week3/index.html">
+                  <img class="img-responsive" src="week3/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 3<h2>
+                    <h5>3D Scanning and Printing</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week4" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week4/index.html">
+                  <img class="img-responsive" src="week4/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 4<h2>
+                    <h5>Electronics Design</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week5" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week5/index.html">
+                  <img class="img-responsive" src="week5/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 5<h2>
+                    <h5>Computer Controlled Machining</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week6" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week6/index.html">
+                  <img class="img-responsive" src="week6/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 6<h2>
+                    <h5>Embedded Programming</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week7" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week7/index.html">
+                  <img class="img-responsive" src="week7/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 7<h2>
+                    <h5>Molding and Casting</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week8" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week8/index.html">
+                  <img class="img-responsive" src="week8/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 8<h2>
+                    <h5>Output Devices</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week9" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week9/index.html">
+                  <img class="img-responsive" src="week9/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 9<h2>
+                    <h5>Machine Design</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week10" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week10/index.html">
+                  <img class="img-responsive" src="week10/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 10<h2>
+                    <h5>Input Devices</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week11" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week11/index.html">
+                  <img class="img-responsive" src="week11/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 11<h2>
+                    <h5>Interface and Application Programming</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week12" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week12/index.html">
+                  <img class="img-responsive" src="week12/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 12<h2>
+                    <h5>Networking and Communications</h5>
+                  </div>
+                </a>
+            </div>
+            <div id="week13" class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumb">
+                <a class="thumbnail" href="week13/index.html">
+                  <img class="img-responsive" src="week13/static/thumbnail.png" alt="">
+                  <div id="overlay">
+                    <h2>Week 13<h2>
+                    <h5>Composites</h5>
+                  </div>
+                </a>
+            </div>
+          </div>
+        </div>
+  </section>
+  <div class="colorbar"></div>
+  <div class="spacer"></div>
+</body>
