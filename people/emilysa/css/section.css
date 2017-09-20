@@ -1,0 +1,36 @@
+/*Last Updated: March 5th, 2017*/
+.about-section {
+    height: 600px;
+    padding-top: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+    /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/cc/e6/50/cce65042771bd106f66506544d5da802.jpg);*/
+    background-size: cover;
+}
+
+.project-section {
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    /*background-image: url(https://previews.123rf.com/images/undrey/undrey1505/undrey150500020/40037021-Abstract-watercolor-aquarelle-hand-drawn-blue-drop-splatter-stain-art-paint-on-white-background-Vect-Stock-Illustration.jpg);*/
+    background-size: cover;
+}
+
+.contact-section {
+    height: 400px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    /*background-image: url(https://static1.squarespace.com/static/51e9a505e4b077fcc279225a/t/55a3db09e4b0211445ee1d94/1436801802956/);*/
+    background-size: 50%;
+}
+
+.thoughts-section {
+    height: 400px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    /*background-image: url(http://blmommy.com/wp-content/uploads/2015/04/Mint-Watercolor-Wallpaper_Pixejoo.jpg);*/
+    background-size: cover;
+}
