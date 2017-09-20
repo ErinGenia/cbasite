@@ -1,3 +1,277 @@
 <p>How to Make (almost) Anything</p>
 <p>Fall 2017</p><p>Erin Genia</p>
-<p>Personal Website: <a href=" ">act.mit.edu/people/students/erin-genia/</a></p>
+<p>Academic Website: <a href=" ">act.mit.edu/people/students/erin-genia/</a></p>
+* { margin:0; padding:0; outline: 0;}
+h1,h2,h3 { font-size: 100%; font-weight: normal; }
+ol,ul { list-style: none; }
+img {border: 0;}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background: #fff;
+	font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+}
+
+::selection {
+  background: rgba(33, 173, 144,.7);
+  color: rgba(255,255,255,.7);
+  text-shadow: none;
+}
+::-moz-selection {
+  background: rgba(33, 173, 144,.7);
+  color: rgba(255,255,255,.7);
+  text-shadow: none;
+}
+
+.header {
+  color: #fff;
+  /*background: #3e9dd7 url('images/background.jpg') no-repeat center center;*/
+  background: #aa1665 url('images/background.jpg') no-repeat center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 10px 0 10px 0;
+  -moz-box-shadow: inset 0 -2px 3px 0 rgba(0,0,0,.25);
+  -webkit-box-shadow: inset 0 -2px 3px 0 rgba(0,0,0,.25);
+  box-shadow: inset 0 -2px 3px 0 rgba(0,0,0,.25);
+}
+
+.header h1 {
+  
+  font-size: 25px;
+  font-weight: 100;
+/*  text-align: center;*/
+  font-family: Arial;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.header h1 a:hover {
+  position: relative;
+  bottom: 2px;
+ text-shadow: 0 1px 0 rgba(0,0,0,.25); 
+}
+.header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header h1:after {
+
+  /*content: ""; */
+  display: block;
+  border-top: 1px solid rgba(255,255,255,.5);
+  width: 500px;
+  max-width: 80%;
+  margin: 20px auto 25px auto;
+}
+
+.header h2 {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 33px;
+  width: 660px;
+  max-width: 80%;
+  margin-left: 100px; 
+ /* margin: 0 auto; 
+  padding: 50px; */
+  font-family: Arial;
+}
+
+.header h2 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.header h2 a:hover {
+  position: relative;
+  bottom: 1px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+.header h2 a:active {
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+}
+
+.header ul {
+  width: 660px;
+  max-width: 80%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.header ul li {
+  display: inline-block;
+  background: rgba(0,0,0,.15);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.header ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(255,255,255,.85);
+}
+
+.header ul li:hover a {
+  color: rgba(255,255,255,1);
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+  position: relative;
+  bottom: 1px;
+}
+
+.header ul li:active {
+  -moz-box-shadow: inset 0 1px 0 0 rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(0,0,0,.2);
+  box-shadow: inset 0 1px 0 0 rgba(0,0,0,.2);
+}
+
+.header ul li:active a {
+  color: rgba(255,255,255,1);
+  text-shadow: none;
+  position: relative;
+  top: 1px;
+}
+
+.projects {
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projects li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  -moz-transform: scale(.98);
+  -webkit-transform: scale(.98);
+  transform: scale(.98); 
+  text-align: center; 
+}
+
+.projects li:nth-child(3n+3) {
+  margin-right: 0px;
+}
+
+.projects li:last-of-type {
+  margin-right: 0px;
+}
+
+.projects li:last-of-type span {
+  width: 550px;
+}
+
+.projects li:last-of-type span img {
+  width: 550px;
+  height: 150px;
+}
+
+.projects li:hover {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.projects li:active {
+  position: relative;
+  top: 1px;
+}
+
+.projects li a {
+  text-decoration: none;
+}
+
+.projects li h3 {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #666;
+  font-weight: 400;
+}
+
+.projects li h4 {
+  margin-top: 2px;
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+@media (max-width: 950px) {
+  .projects {
+    max-width: 550px;
+  }
+
+  .projects li:nth-child(3n+3) {
+    margin-right: 50px;
+  }
+
+  .projects li:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects {
+    max-width: 250px;
+  }
+
+  .projects li:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .projects li:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .projects li {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 25px 0 35px 0;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header h1:after {
+    margin: 10px auto 15px auto;
+  }
+
+  .header h2 {
+    font-size: 16px;
+    line-height: 30px;
+
+  }
+
+  .header ul {
+    margin: 10px auto 0 auto;
+  }
+
+  .projects {
+    padding: 25px;
+  }
+
+ .footer {
+     padding: 10px 0 10px 0;
+     text-align: right;
+ }
